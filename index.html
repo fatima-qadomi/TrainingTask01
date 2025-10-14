@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Ysabeau+SC:wght@1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Parkinsans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="fixed inset-0 flex justify-center items-center bg-gradient-to-r from-teal-600 to-teal-700 bg-opacity-60 p-4"
+    >
+      <div class="relative bg-white shadow-lg p-8 rounded-2xl w-full max-w-lg">
+        <div class="flex justify-between items-start">
+          <div class="flex items-center gap-3">
+            <div
+              class="flex justify-center items-center bg-teal-500 rounded-lg w-9 h-9"
+            >
+              <img src="/imgs/setting.png" alt="settings" class="w-5 h-5" />
+            </div>
+
+            <h2 class="font-semibold text-gray-800 text-sm">
+              RSD Integration Configuration
+            </h2>
+          </div>
+
+          <button>
+            <i class="text-gray-600 text-lg fa-solid fa-xmark"></i>
+          </button>
+
+        </div>
+
+        <p class="mt-3 text-gray-500 text-xs">
+          Connect your pharmacy to the RSD marketplace system. <br />
+          Enter your credentials below to enable seamless integration.
+        </p>
+
+        <form class="space-y-3 mt-4">
+          <div>
+            <label class="block mb-1 text-gray-600 text-xs"
+              >RSD API Token <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter your API token"
+              class="shadow-sm px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-300 w-full text-sm"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="block mb-1 text-gray-600 text-xs"
+              >Pharmacy User Name <span class="text-red-500">*</span></label
+            >
+            <input
+              type="text"
+              placeholder="Enter pharmacy username"
+              class="shadow-sm px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-300 w-full text-sm"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="block mb-1 text-gray-600 text-xs"
+              >Pharmacy Password <span class="text-red-500">*</span></label
+            >
+            <div>
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter pharmacy password"
+                class="shadow-sm px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-300 w-full text-sm n"
+                required
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex justify-between items-center bg-teal-50 px-3 py-2 border border-teal-100 rounded-lg"
+          >
+            <p class="text-teal-700 text-sm">Need help with integration?</p>
+            <button
+              type="button"
+              class="bg-teal-500 px-3 py-1 rounded-full text-white text-xs"
+            >
+              &#128214; Step by Step Guide
+            </button>
+          </div>
+
+          <div class="flex justify-end items-center gap-3 mt-1">
+            <button
+              type="button"
+              class="hover:bg-gray-50 px-4 py-2 border border-gray-200 rounded-full text-gray-600 text-sm"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="bg-teal-500 hover:bg-teal-600 shadow px-4 py-2 rounded-full text-white text-sm"
+            >
+              Save Configuration
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
